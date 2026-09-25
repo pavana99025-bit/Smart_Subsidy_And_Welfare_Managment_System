@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal User Registration - SevaSindu Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <div class="register-header">
+                <div class="register-icon">👤</div>
+                <h2>Normal User Registration</h2>
+                <p>Create your account to access government services</p>
+            </div>
+            <form class="register-form" id="userRegisterForm">
+                <div class="form-group">
+                    <label for="userFullName">Full Name</label>
+                    <input type="text" id="userFullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="userAadhaar">Aadhaar Number</label>
+                    <input type="text" id="userAadhaar" name="aadhaar" pattern="[0-9]{12}" maxlength="12" required>
+                </div>
+                <div class="form-group">
+                    <label for="userDateOfBirth">Date of Birth</label>
+                    <input type="date" id="userDateOfBirth" name="dateOfBirth" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPhone">Phone Number</label>
+                    <input type="tel" id="userPhone" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email Address</label>
+                    <input type="email" id="userEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="userRegUsername">Username</label>
+                    <input type="text" id="userRegUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="userRegPassword">Password</label>
+                    <input type="password" id="userRegPassword" name="password" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="userConfirmPassword">Confirm Password</label>
+                    <input type="password" id="userConfirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+            <div class="login-link">
+                <p>Already have an account?</p>
+                <a href="login-user.html">Login Here</a>
+            </div>
+            <div class="back-home">
+                <a href="index.html">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

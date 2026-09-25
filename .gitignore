@@ -1,0 +1,7 @@
+node_modules/
+sevasindu.db
+.env
+*.log
+.DS_Store
+
+

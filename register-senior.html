@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Citizen Registration - SevaSindu Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <div class="register-header">
+                <div class="register-icon">👴</div>
+                <h2>Senior Citizen Registration</h2>
+                <p>Create your account to access senior citizen services</p>
+            </div>
+            <form class="register-form" id="seniorRegisterForm">
+                <div class="form-group">
+                    <label for="seniorFullName">Full Name</label>
+                    <input type="text" id="seniorFullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorAadhaar">Aadhaar Number</label>
+                    <input type="text" id="seniorAadhaar" name="aadhaar" pattern="[0-9]{12}" maxlength="12" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorDateOfBirth">Date of Birth</label>
+                    <input type="date" id="seniorDateOfBirth" name="dateOfBirth" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorPhone">Phone Number</label>
+                    <input type="tel" id="seniorPhone" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorEmail">Email Address</label>
+                    <input type="email" id="seniorEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorRegUsername">Username</label>
+                    <input type="text" id="seniorRegUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorRegPassword">Password</label>
+                    <input type="password" id="seniorRegPassword" name="password" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="seniorConfirmPassword">Confirm Password</label>
+                    <input type="password" id="seniorConfirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+            <div class="login-link">
+                <p>Already have an account?</p>
+                <a href="login-senior.html">Login Here</a>
+            </div>
+            <div class="back-home">
+                <a href="index.html">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
